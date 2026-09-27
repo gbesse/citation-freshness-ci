@@ -24,6 +24,17 @@ Python 3.11+; no external package required. / Python 3.11+ ; aucune dépendance 
 
 `capture` genera un recibo JSON con ruta, líneas, fragmento y SHA-256. `verify ROOT RECEIPT.json` distingue `exact`, `moved`, `stale`, `missing` y `ambiguous`. Esta versión comprueba archivos locales; todavía no verifica un commit de Git.
 
+## Demo relacionada con jevgrep
+
+El analizador lee bloques `Source block` numerados en la [salida documentada de jevgrep](https://github.com/dzhng/jevgrep/blob/main/specs/done/jevgrep/assets/stdout-example.txt). Crea recibos a partir de los fragmentos observados y los compara con archivos locales:
+
+```bash
+python3 tool.py capture-jevgrep . examples/jevgrep-output.txt > receipts.json
+python3 tool.py verify-batch . receipts.json
+```
+
+El ejemplo es sintético y no llama a jevgrep ni a Jev. `capture-jevgrep` puede leer una salida real guardada; una fuente modificada produce `stale` al verificar.
+
 ## Pruebas
 
 ```bash

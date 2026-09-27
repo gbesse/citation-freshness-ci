@@ -1,0 +1,9 @@
+Jevgrep: 1 relevant file.
+- "examples/source.py" — implementation; selected source below
+End file list.
+
+Source block "examples/source.py" lines 1-2:
+1: def answer():
+2:     return 42
+
+End context.
