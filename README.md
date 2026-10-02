@@ -35,6 +35,10 @@ python3 tool.py verify-batch . receipts.json
 
 La fixture est synthétique et aucun appel à jevgrep ou à Jev n’est lancé. `capture-jevgrep` peut lire une vraie sortie enregistrée ; une source modifiée donne `stale` au contrôle.
 
+## Exemple : extrait dupliqué
+
+`python3 -m examples.ambiguous_span` crée deux copies identiques d’un extrait dans un fichier temporaire. Le reçu est encore valide, mais le contrôle renvoie `ambiguous` car une citation ne peut plus désigner une ligne unique. Aucune source réelle n’est modifiée.
+
 ## Tests
 
 ```bash
