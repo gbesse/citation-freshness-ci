@@ -35,6 +35,10 @@ python3 tool.py verify-batch . receipts.json
 
 The fixture is synthetic; neither jevgrep nor Jev is called. `capture-jevgrep` can read a saved real output; changed source returns `stale` on verification.
 
+## Example: duplicated excerpt
+
+`python3 -m examples.ambiguous_span` creates two identical copies of an excerpt in a temporary file. The receipt is still valid, but verification returns `ambiguous` because the citation no longer identifies a unique line. No real source file is changed.
+
 ## Tests
 
 ```bash

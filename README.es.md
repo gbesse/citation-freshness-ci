@@ -35,6 +35,10 @@ python3 tool.py verify-batch . receipts.json
 
 El ejemplo es sintético y no llama a jevgrep ni a Jev. `capture-jevgrep` puede leer una salida real guardada; una fuente modificada produce `stale` al verificar.
 
+## Ejemplo: fragmento duplicado
+
+`python3 -m examples.ambiguous_span` crea dos copias idénticas de un fragmento en un archivo temporal. El recibo sigue siendo válido, pero la verificación devuelve `ambiguous` porque la cita ya no señala una línea única. No se modifica ningún archivo fuente real.
+
 ## Pruebas
 
 ```bash
