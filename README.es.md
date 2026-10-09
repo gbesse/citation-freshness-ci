@@ -48,3 +48,7 @@ python3 -m unittest discover -s tests -v
 ## Licencia
 
 MIT.
+
+## Comprobación de adopción
+
+[Pruebe un caso concreto y compruebe sus límites](examples/adoption-check.md).
