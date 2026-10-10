@@ -40,3 +40,15 @@ FR : adaptez une copie de la fixture locale à cette situation, puis vérifiez l
 EN: adapt a copy of the local fixture to this situation, then check the behavior described above. Values are illustrative, not measured Jev output.
 
 ES: adapte una copia de la fixture local a esta situación y compruebe el comportamiento descrito arriba. Los valores son ilustrativos, no resultados Jev medidos.
+
+## Second cas · Second case · Segundo caso
+
+```text
+receipt.sha256=old; current_snippet.sha256=new
+```
+
+**FR :** Un extrait dont le texte a changé relève de `stale`, même si son chemin et ses lignes sont identiques. Relisez la source avant de réutiliser la citation.
+
+**EN:** A snippet whose text changed is `stale` even if its path and line numbers match. Reread the source before reusing the citation.
+
+**ES:** Un fragmento cuyo texto cambió es `stale` aunque coincidan ruta y líneas. Revise la fuente antes de reutilizar la cita.
